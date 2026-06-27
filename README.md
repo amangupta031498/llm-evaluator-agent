@@ -1,6 +1,5 @@
 # 📊 LLM Output Evaluator Agent
 
-A portfolio-grade AI evaluation agent built with **LangGraph + Groq (free)**.  
 Uses the **Judge-LLM pattern** — each metric is a dedicated graph node with its own specialized system prompt.
 
 ---
@@ -89,7 +88,6 @@ Saved automatically to `eval_report.json` after every run.
 - Evaluate responses from any LLM (ChatGPT, Gemini, Claude, etc.)
 - QA gate in a RAG pipeline before returning answers to users
 - Compare prompt versions — run both, compare overall scores
-- Demo for AI QA / SDET interviews — shows judge-LLM pattern knowledge
 
 ---
 
@@ -101,7 +99,4 @@ Saved automatically to `eval_report.json` after every run.
 
 ---
 
-## 📌 Interview Talking Points
-- "Each metric is a separate graph node with a specialized system prompt — this is the judge-LLM pattern used in production eval frameworks like DeepEval and Ragas"
-- "LangGraph's StateGraph lets me pass structured state between nodes — scores from earlier nodes are available to the aggregator without any globals"
-- "Hallucination risk is inverted in the overall score calculation so all three metrics contribute positively"
+
